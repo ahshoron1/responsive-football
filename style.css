@@ -11,3 +11,271 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
  }
+ section{
+     padding-bottom: 80px;
+ }
+ .container{
+    width: 1050px;
+    padding-top: 70px;
+}
+.fexiable-area{
+    display: flex;
+}
+h1{
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+ /*====================
+  HOME SECTION STYLES 
+ =====================*/
+ .home{
+     background-color: #2D25A0;
+     padding-bottom: 80px;
+ }
+ .fexi-sec{
+    display: flex;
+    justify-content: center;
+ }
+ .half-width{
+     width: 50%;
+ }
+ .half-width .link-btn{
+     padding: 10px 24px;
+     background-color: #E02C6D;
+     color: #ffffff;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ .half-width img{
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.5s;
+ }
+ .img-hover:hover .top-banner{
+     transform: translateY(-7px);
+ }
+/*=======================
+  PLAYERS SECTION STYLES 
+ =========================*/
+
+ .all-players{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 27px;
+ }
+ .player{
+    width: 300px;
+    height: 450px;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+ .player img{
+    width: 100%;
+    border-radius: 5px;
+ }
+
+ /*==========================
+  LATEST NEWS SECTION STYLES 
+ ============================*/
+ .news-items{
+     display: grid;
+     grid-gap: 30px;
+     grid-template-columns: repeat(3, 1fr);
+ }
+ .news-title{
+     color: #000;
+     margin-top: 0px;
+     font-size: 40px;
+ }
+.items{
+    width: 100%;
+    border:1px solid #e2e8f0;
+    cursor: pointer;
+    transition:background-color .5s ease-in-out;
+}
+.items:hover{
+    background-color: #e2e8f0;
+}
+.items .items-img{
+    height: 230px;
+    overflow: hidden;
+    
+}
+.items img{
+    width: 100%;
+    height: 100%;
+    
+}
+.items:hover img{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+.item-info{
+    padding: 15px;
+}
+.item-info p{
+    margin-bottom: 10px;
+}
+
+.all-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info .date{
+    display: flex;
+    align-items: center;
+}
+.all-info i.dicon{
+    margin-bottom: 5px;
+}
+.all-info i.fa-clock {
+    color: #a5a5a5;
+}
+.date p{
+    margin-left: 5px;
+    color: #a5a5a5;
+}
+.all-info .club-text{
+    display: flex;
+    align-items: center;
+}
+.club-text p{
+    margin-left: 5px;
+}
+.club-text i,.club-link{
+    color: #81204c;
+}
+.all-info .share-icon i{
+    color: #a5a5a5;
+}
+
+ /*=======================
+  PARTNERS SECTION STYLES 
+ =========================*/
+ .partners{
+     height: 380px;
+     background-color: #ebebeb
+     
+ }
+ .partner-items{
+    width: 80%;
+    margin: 0 auto;
+ }
+ .partner-logo {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     text-align: center;
+ }
+ .partner-items_1{
+     margin: 50px 0;
+ }
+ .partner-logo-1{
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-row-gap: 20px;
+     text-align: center;
+ }
+
+ /*=======================
+  FOOTER SECTION STYLES 
+ =========================*/
+ footer{
+     margin-top: 70px;
+ }
+ .all-social{
+    width: 483px;
+    height: 213px;
+}
+.all-social p{
+    text-align: center;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.logo img{
+    width: 100%;
+}
+.social{
+    margin-bottom: 20px;
+}
+.social img{
+    width: 32px;
+    height: 32px;
+    margin-left: 14px;
+}
+
+
+/*=======================
+  MOBILE RESPONSIVE 
+ =========================*/
+ @media only screen and (max-width: 668px) {
+     h1{
+         font-size: 45px;
+     }
+     .container{
+         margin-top: -100px;
+         margin-bottom: -100px;
+     }
+    .fexi-sec{
+        display: flex;
+        justify-content: center;
+     }
+    .fexiable-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .half-width {
+        width: 100%;
+        margin-left: 18px;
+    }
+    .half-width img{
+        width: 90%;
+        margin-top: 30px;
+     }
+     .players{
+         margin-top: 20px;
+         margin-left: 20px;
+     }
+     .all-players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+        margin-left: 18px;
+    }
+    .all-social {
+        width: 330px;
+        height: 200px;
+    }
+    section{
+        padding-top: 50px;
+    }
+}
+
