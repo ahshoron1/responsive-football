@@ -277,6 +277,9 @@ hr{
         width: 60%;
         margin-left: 48px;
     }
+    .half-width h1{
+        font-size: 30px;
+    }
     .half-width img{
         width: 100%;
         margin-top: 30px;
@@ -312,7 +315,7 @@ hr{
     }
     .items{
         width: 75%;
-        margin-left: 80px;
+        margin-left: 60px;
     }
     .partners{
         padding-top: 100px;
